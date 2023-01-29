@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+body {
+    @apply
+
+    overflow-hidden
+    box-border
+    m-0
+    p-0
+    w-[100vw] 
+    h-[100vh]
+}
+
+.compound {
+    @apply
+
+    flex
+    flex-row
+    w-[100vw]
+    max-h-screen
+    text-center
+    mx-auto
+    text-white
+    justify-center
+    items-center
+}
+
+.right {
+    @apply
+
+    w-[100%]
+    bg-cover
+    bg-no-repeat
+    pt-[40%]
+    pb-[60%]
+    md:pt-[20%]
+    md:pb-[30%]
+    transition-all
+    ease-linear 
+    duration-700
+    delay-300
+}
+
+.right.split {
+    @apply
+
+    w-3/4
+    transition-all
+    ease-linear
+    duration-700
+    delay-300
+}
+
+.right.shrink {
+    @apply
+
+    w-1/4
+    transition-all
+    ease-linear
+    duration-700
+    delay-300
+}
+
+.left.split {
+    @apply
+
+    w-3/4
+    transition-all 
+    ease-linear
+    duration-700
+    delay-300
+}
+
+.left.shrink {
+    @apply
+
+    w-1/4
+    transition-all
+    ease-linear
+    duration-700
+    delay-300
+}
+
+.left {
+    @apply
+    
+    w-[100%]
+    bg-cover
+    bg-center
+    bg-no-repeat 
+    pt-[40%] 
+    pb-[60%] 
+    md:pt-[20%] 
+    md:pb-[30%]
+    transition-all
+    ease-linear 
+    duration-700
+    delay-300
+}
+
+.compound h1 {
+    @apply
+
+    text-4xl
+    font-bold
+    font-lato
+    whitespace-nowrap
+    overflow-hidden
+    md:text-6xl
+}
+
+.compound button {
+    @apply
+
+    bg-transparent
+    border-[3px]
+    mt-2
+    h-14
+    w-40
+    text-lg
+    font-semibold
+    font-lato
+    whitespace-nowrap 
+    overflow-hidden
+    md:mt-5
+    md:h-20
+    md:w-60
+    md:text-2xl
+}
+
+.right button {
+    @apply
+
+    hover:bg-green-600
+    hover:border-none
+    ease-in-out
+}
+
+.left button {
+    @apply
+
+    hover:bg-blue-600
+    hover:border-none
+    ease-in-out
+}
